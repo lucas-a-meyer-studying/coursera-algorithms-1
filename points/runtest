@@ -1,0 +1,11 @@
+sh compile
+echo "Input 48"
+java-algs4 TestPoints data/input48.txt
+echo "Input 8"
+java-algs4 TestPoints data/input8.txt
+echo "Horizontal 100"
+java-algs4 TestPoints data/horizontal100.txt
+echo "Grid 5x5"
+java-algs4 TestPoints data/grid5x5.txt
+
+

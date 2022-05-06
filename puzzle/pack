@@ -1,0 +1,11 @@
+if [[ $1 ]]
+    then
+        msg=$1;
+else
+        msg="New submission";
+fi
+
+sh runtest
+rm puzzle.zip
+sh gitp "$msg"
+zip puzzle.zip Board.java Solver.java

@@ -1,0 +1,11 @@
+if [[ $1 ]]
+    then
+        msg=$1;
+else
+        msg="New submission";
+fi
+
+sh runtest
+rm kdtree.zip
+sh gitp "$msg"
+zip kdtree.zip PointSET.java KdTree.java

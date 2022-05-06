@@ -1,0 +1,11 @@
+if [[ $1 ]]
+    then
+        msg=$1;
+else
+        msg="New submission";
+fi
+
+sh compile
+rm points.zip
+sh gitp "$msg"
+zip points.zip BruteCollinearPoints.java FastCollinearPoints.java Point.java
